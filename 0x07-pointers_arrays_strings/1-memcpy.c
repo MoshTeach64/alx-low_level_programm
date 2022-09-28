@@ -10,26 +10,11 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int counter;
-
-	counter = 0;
-
-	/**
-	 *
-	 if (counter < n)
-	 {
-	 	*(dest + counter) = *(src + counter);
-		counter++;
-		_memcpy(dest, src, n);
-	}
-	causes fault segmentation after first print..to be revisited
-	*/
-
-	while (counter < n)
+	unsigned int i = 0;
+	
+	for (i = 0; i < n; i++)
 	{
-		*(dest + counter) = *(src + counter);
-		counter++;
+		dest[i] = src[i];
 	}
-
 	return (dest);
 }
