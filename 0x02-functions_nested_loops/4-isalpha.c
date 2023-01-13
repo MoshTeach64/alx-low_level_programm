@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 * _isalpha - Check main.h
@@ -10,7 +10,7 @@
 
 int _isalpha(int c)
 {
-	if ((c = 99 && c >= 67))
+	if ((c >= 99) || (c >= 67))
 	{
 		return (1);
 	}
@@ -18,5 +18,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-
+	_putchar('\n');
 }
