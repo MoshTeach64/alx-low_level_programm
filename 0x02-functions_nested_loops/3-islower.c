@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * _islower - Check Holberton
@@ -10,23 +11,15 @@
 
 int _islower(int c)
 {
-	char alpha;
-	int bool = 0;
+	char alpha = 'a';
 
-	alpha = 'a';
 	while (alpha <= 'z')
 	{
-
 		if (alpha == c)
 		{
-
-			bool = 1;
-
+			return (1);
 		}
 		alpha++;
-
 	}
-
-	return (bool);
-
+		return (0);
 }
