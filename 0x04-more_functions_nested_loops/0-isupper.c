@@ -5,17 +5,6 @@
  * Return: 1 whether it is, 0 otherwise
  */
 
-/**
-* {
-*	if (c >= 65 && c <= 90)
-*	{
-*		return (1);
-*	}
-*	else
-*		return (0);
-* }
-*/
-
 int _isupper(int c)
 {
 	int upper;
